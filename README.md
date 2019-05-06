@@ -1,4 +1,4 @@
-# migrator-frontend
+# Migrator-Frontend
 The frontend for MongoDB migrations written in basic JS
 
 ## Usage

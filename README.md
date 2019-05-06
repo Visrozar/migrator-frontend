@@ -4,7 +4,7 @@ The frontend for MongoDB migrations written in basic JS
 ## Usage
 ### URI
 * The URI field should contain your mongoDB URI without the database name
-* Make sure you allow all ip address to access your DB (so that our servers can access your DB and do the migrations, else you can also deploy our server in your cloud, after all it's open source)
+> **Note:** Make sure you allow all ip address to access your DB (so that our servers can access your DB and do the migrations, else you can also deploy our server in your cloud, after all it's open source)
 
 ### Database
 * This should be the name of the database on which you want to run the query
@@ -20,6 +20,8 @@ The frontend for MongoDB migrations written in basic JS
 
 ### Condition
 * Again an optional field. Here you'll specify the actual condition
+> **Note:** If you want the condition to be `_id`, then you can keep the condition_type as object and condition to be 
+`{"_id": "5c63bbc2547baf77ce76be18"}`
 
 ### Key
 * The name of the key you want to add/edit or delete
@@ -29,6 +31,3 @@ The frontend for MongoDB migrations written in basic JS
 
 ### Value
 * Here you'll add the actual value
-
-## Specific Case Examples
-* If you want the condition to be `_id`, then you can keep the condition_type as object and condition to be `{"_id": "5c63bbc2547baf77ce76be18"}`

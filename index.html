@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Migrator</title>
+</head>
+
+<body>
+    <div class="container">
+        <br />
+        <h1>Migrator!</h1>
+        <br />
+        <form id="migratorForm" onsubmit="sendRequest()">
+            <div class="form-group">
+                <label for="inputAddress">URI</label>
+                <input type="text" class="form-control" name="uri" required>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="database">Database</label>
+                    <input type="text" class="form-control" name="database" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="collection">Collection</label>
+                    <input type="text" class="form-control" name="collection" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="condition_type">Condition Type</label>
+                    <select name="condition_type" class="form-control" required>
+                        <option selected>string</option>
+                        <option>array</option>
+                        <option>object</option>
+                        <option>int</option>
+                        <option>float</option>
+                        <option>null</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="condition">Condition</label>
+                    <input type="text" class="form-control" name="condition">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-2">
+                    <label for="action">Action</label>
+                    <select name="action" class="form-control" required>
+                        <option selected>add</option>
+                        <option>edit</option>
+                        <option>delete</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="key">Key</label>
+                    <input type="text" class="form-control" name="key" required>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="value_type">Value Type</label>
+                    <select name="value_type" class="form-control" required>
+                        <option selected>string</option>
+                        <option>array</option>
+                        <option>object</option>
+                        <option>int</option>
+                        <option>float</option>
+                        <option>null</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="value">Value</label>
+                    <input class="form-control" name="value">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Migrate</button>
+        </form>
+    </div>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</html>

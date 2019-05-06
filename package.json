@@ -1,0 +1,24 @@
+{
+  "name": "migrator-frontend",
+  "version": "1.0.0",
+  "description": "The frontend for MongoDB migrations written in basic JS",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Visrozar/migrator-frontend.git"
+  },
+  "keywords": [
+    "MongoDB",
+    "migration",
+    "javascript"
+  ],
+  "author": "Elvis Rozario",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Visrozar/migrator-frontend/issues"
+  },
+  "homepage": "https://github.com/Visrozar/migrator-frontend#readme"
+}

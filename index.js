@@ -17,7 +17,7 @@ function sendRequest() {
     });
 
     // Set up our request
-    XHR.open("POST", "http://localhost:8080/migrate");
+    XHR.open("POST", "https://mongo-migrator.herokuapp.com/migrate");
 
     XHR.setRequestHeader("Content-type", "application/json");
 

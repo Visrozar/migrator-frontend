@@ -15,19 +15,16 @@ The frontend for MongoDB migrations written in basic JS
 ### Action
 * The action you want to perform, currently it supports three actions - add, edit and delete
 
-### Condition Type
-* This is an optional field. Here you specify the data type of the condition you're going to add. Currently the supported data types are string, array, object, int, float, null (null is when the value is supposed to be null)
-
 ### Condition
-* Again an optional field. Here you'll specify the actual condition
-> **Note:** If you want the condition to be `_id`, then you can keep the condition_type as object and condition to be 
+* Again an optional field. Here you'll specify the actual condition. This should always be a string which can be parsed to a JSON object.
+> **Note:** If you want the condition to be `_id`, then the condition needs to be 
 `{"_id": "5c63bbc2547baf77ce76be18"}`
 
 ### Key
 * The name of the key you want to add/edit or delete
 
 ### Value Type
-* Similar to Condition Type but is a mandatory field. Here you specify the data type of the value you're going to add
+* This is a mandatory field. Here you specify the data type of the value you're going to add. Currently the supported data types are string, array, object, int, float, null (null is when the value is supposed to be null)
 
 ### Value
 * Here you'll add the actual value
